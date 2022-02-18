@@ -8,7 +8,7 @@ app.get("/myClock", (req, res) => {
 });
 
 const PORT = 8080;
-app.listen(8080, (error) => {
+app.listen((process.env.PORT || '5000'), (error) => {
   console.log("Server is running on port", PORT);
 });
 //...
