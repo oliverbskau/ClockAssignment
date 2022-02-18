@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/myClock", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/frontPageClock.html");
 });
 
